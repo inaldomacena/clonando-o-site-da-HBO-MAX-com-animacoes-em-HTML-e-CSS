@@ -1,0 +1,178 @@
+
+@import url("./reset.css");
+
+
+
+
+/*******************MEDIA QUERIES***********************************/ 
+
+@media screen  and (max-width:1200px) {
+  
+
+    .planos_assinatura{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      margin: 10px 20px 15px 10px;
+      gap:40px;
+    }
+    .contents_container{
+        gap:32px;
+    }
+}
+.header_channel{
+  display:flex;
+  flex-direction: row;
+
+}
+
+
+@media screen  and (max-width:1140px) {
+    .assinatura_cards{
+      display:flex;
+      justify-content: center;
+        flex-direction:column;
+        align-self: center;
+    }
+    .assinatura_cards{
+        max-width: 600px;
+    }
+}
+.header_channel{
+  display:flex;
+  flex-direction: row;
+
+}
+
+@media screen and (max-width: 800px) {
+  
+  .planos_assinatura{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: 10px 20px 15px 10px;
+    gap:40px;
+
+  }
+    .contents_container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .header_channel{
+    display:flex;
+  flex-direction: row;
+
+  }
+
+@media screen and (max-width: 480px) {
+
+
+    .assinatura_price {
+      font-size: 1.5rem;
+    }
+  
+    .assinatura_description {
+      font-size: 1rem;
+    }
+  
+    .plano {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .assinatura_cards {
+      padding: 40px;
+      
+    }
+  
+    .contents_container {
+      grid-template-columns: repeat(6, 100%);
+      grid-auto-flow: column;
+      overflow: auto hidden;
+    }
+
+
+
+
+}
+
+
+
+@media (pointer: coarse) {
+    .contents_card:hover {
+      transform: none;
+    }
+  
+    .planos_assinatura:has(.assinatura_cards:nth-child(1):hover)
+      .assinatura_cards:nth-child(2),
+    .planos_assinatura:has(.assinatura_cards:nth-child(2):hover)
+      .assinatura_cards:nth-child(1) {
+      transform: none;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+/********************ANIMATIONS***********************************/ 
+@keyframes gradient{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50% ;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+
+@keyframes wiggle{
+    0%{
+      transform:rotate(0);
+    }
+
+    
+    10%{
+         transform:rotate(0);
+    }
+
+    15%{
+        transform: rotate(-15deg);
+    }
+    20%{
+        transform: rotate(10deg);
+    }
+    25%{
+        transform: rotate(-10deg);
+    }
+    30%{
+        transform: rotate(10deg);
+    }
+    35%{
+        transform: rotate(-10deg);
+    }
+    40%,
+    100%{
+        transform: rotate(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
